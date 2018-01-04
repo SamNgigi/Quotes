@@ -1,10 +1,16 @@
 <!--To get bootstrap 4 working make sure the you specify the umd folder of popper in node modules-->
 <button type="button" class="btn btn-primary mx-2 my-2" data-toggle="modal" data-target="#exampleModal">
-  Up-Vote
+  <span class="fa-stack fa-sm">
+  <i class="fa fa-circle fa-stack-2x"></i>
+  <strong id="voteUp" class="fa-stack-1x fa-inverse calendar-text">27</strong>
+  </span>  Up-Vote
   <i class="fa fa-hand-o-up ml-1" aria-hidden="true"></i>
 </button>
 <button type="button" class="btn btn-primary mx-2 my-2" data-toggle="modal" data-target="#exampleModal">
-  Down-Vote
+  <span class="fa-stack fa-sm mr-2">
+  <i class="fa fa-circle fa-stack-2x"></i>
+  <strong id="voteDown" class="fa-stack-1x fa-inverse calendar-text mr-2">27</strong>
+  </span>Down-Vote
   <i class="fa fa-hand-o-down ml-1" aria-hidden="true"></i>
 </button>
 <!-- Modal -->
