@@ -1,0 +1,24 @@
+<div class="write-qoute-wrapper">
+  <p>Write a quote.</p>
+  <!--The two way Data binding syntax is [()]
+   Input binding syntax is [].
+   Output binding syntax is ();
+  -->
+  <div class="container">
+    <form class="form-row">
+      <div class="col-10">
+        <!--If ngModel is used within a form tag, either the name attribute must be set or the form
+      control must be defined as 'standalone' in ngModelOptions.
+
+      Example 1: <input [(ngModel)]="person.firstName" name="first">
+      Example 2: <input [(ngModel)]="person.firstName" [ngModelOptions]="{standalone: true}">
+    at -->
+        <input id="qoute" type="text" class="form-control" placeholder="Type here" [(ngModel)]="writtenQuote.qoute" value={{writtenQuote}} name="qoute"/>
+        {{writtenQuote.qoute}}
+      </div>
+      <div class="col-2">
+        <button type="button"(click)="addQuote" class="btn btn-primary">Niaje</button>
+      </div>
+    </form>
+  </div>
+</div>

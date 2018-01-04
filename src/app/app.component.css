@@ -1,0 +1,10 @@
+.Qoute{
+  text-align: center;
+}
+.qoute-wrapper{
+  margin: 20px auto 20px auto;
+  width: 500px;
+  min-height: 600px;
+  border: 2px solid #66e0ff;
+  box-shadow:  2px 5px 15px 5px  #f2f2f2;
+}
