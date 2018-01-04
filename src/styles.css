@@ -1,6 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import url('https://fonts.googleapis.com/css?family=Nunito|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Nunito|Raleway|Handlee|Montserrat|Sacramento|Tangerine');
+.header {
+  /*font-family: 'Montserrat', sans-serif;
+  font-family: 'Handlee', cursive;
+  font-family: 'Tangerine', cursive;*/
+  font-family: 'Sacramento', cursive;
+}
+
 * {
   /*font-family: 'Raleway', sans-serif;*/
   font-family: 'Nunito', sans-serif;
@@ -10,4 +17,4 @@
   margin-top: .1em;
   margin-right: .2em;
   color: black;
- }
+}
