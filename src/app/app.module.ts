@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { Boot4TestComponent } from './boot4-test/boot4-test.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    Boot4TestComponent
   ],
   imports: [
     BrowserModule
