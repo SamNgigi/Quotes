@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Qoute } from "../qoute";
 @Component({
   selector: 'app-write-qoute',
@@ -7,7 +7,13 @@ import { Qoute } from "../qoute";
 })
 export class WriteQouteComponent implements OnInit {
 
-  writtenQuote = new Qoute(0,"","");
+  inputQuote = new Qoute(0,"","");
+
+  @Output() addQoute = new EventEmitter<Qoute>();
+
+  submitQoute(){
+    this.addQoute.emit(this.inputQuote);
+  }
 
   constructor() {
 

@@ -5,19 +5,23 @@
    Output binding syntax is ();
   -->
   <div class="container">
-    <form class="form-row">
-      <div class="col-10">
+    <form (ngSubmit)="submitQoute()" #goalForm = "ngForm" class="form-row">
+      <div class="col-6">
         <!--If ngModel is used within a form tag, either the name attribute must be set or the form
       control must be defined as 'standalone' in ngModelOptions.
 
       Example 1: <input [(ngModel)]="person.firstName" name="first">
       Example 2: <input [(ngModel)]="person.firstName" [ngModelOptions]="{standalone: true}">
+
+      notice that the ids "#id" is used when when submiting the forms as the ids are referenced through the ngModel
     at -->
-        <input id="qoute" type="text" class="form-control" placeholder="Type here" [(ngModel)]="writtenQuote.qoute" value={{writtenQuote}} name="qoute"/>
-        {{writtenQuote.qoute}}
+        <input id="qoute" type="text" class="form-control" placeholder="Qoute" [(ngModel)]="inputQuote.qoute" value={{inputQuote}} name="qoute" #qoute="ngModel" /> {{inputQuote.qoute}}
+      </div>
+      <div class="col-4">
+        <input id="by" type="text" class="form-control" placeholder="by" [(ngModel)]="inputQuote.by" value="{{inputQuote}}" name="by" #by="ngModel" />
       </div>
       <div class="col-2">
-        <button type="button"(click)="addQuote" class="btn btn-primary">Niaje</button>
+        <button type="button" (click)="addQuote" class="btn btn-outline-primary">Niaje</button>
       </div>
     </form>
   </div>
