@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { Boot4TestComponent } from './boot4-test/boot4-test.component';
 import { HeaderComponent } from './header/header.component';
 import { WriteQouteComponent } from './write-qoute/write-qoute.component';
+import { OuputQuoteComponent } from './ouput-quote/ouput-quote.component';
+import { QuotesComponent } from './quotes/quotes.component';
 
 
 @NgModule({
@@ -13,7 +15,9 @@ import { WriteQouteComponent } from './write-qoute/write-qoute.component';
     AppComponent,
     Boot4TestComponent,
     HeaderComponent,
-    WriteQouteComponent
+    WriteQouteComponent,
+    OuputQuoteComponent,
+    QuotesComponent
   ],
   imports: [
     BrowserModule,

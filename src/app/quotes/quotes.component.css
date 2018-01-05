@@ -1,0 +1,6 @@
+.rounded-right{
+  border-left: 5px solid #33ccff;
+  border-bottom: 2px solid #99e6ff ;
+  background-color: #e6f9ff;
+  box-shadow: -2px 5px  15px 5px  #e6f9ff;
+}

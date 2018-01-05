@@ -1,0 +1,8 @@
+<div class="container-fluid rounded-right" *ngFor = "let qt of qoutes;let i = index">
+  <div class="row">
+    <blockquote class="blockquote">
+      <p id="{{i}}" class="text-left ml-2">{{qt.qoute}}</p>
+      <footer class="blockquote-footer text-left ml-3"><cite title="">{{qt.by}}</cite></footer>
+    </blockquote>
+  </div>
+</div>
